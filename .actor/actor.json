@@ -1,0 +1,17 @@
+{
+    "actorSpecification": 1,
+    "name": "runtime-ui-text-translator",
+    "title": "Runtime UI Text Translator",
+    "description": "Production-safe localization middleware for UI systems. Preserves placeholders, enforces tone, and integrates into CI/CD pipelines and MCP servers. A mistranslated UI error can break onboarding, compliance, or conversions — this Actor prevents that.",
+    "version": "0.0",
+    "meta": {
+        "templateId": "ai-generated-actor",
+        "generatedBy": "gemini-2.0-flash-exp"
+    },
+    "input": "./input_schema.json",
+    "output": "./output_schema.json",
+    "storages": {
+        "dataset": "./dataset_schema.json"
+    },
+    "dockerfile": "../Dockerfile"
+}

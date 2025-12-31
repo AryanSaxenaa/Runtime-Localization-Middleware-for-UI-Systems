@@ -1,0 +1,51 @@
+{
+    "actorSpecification": 1,
+    "fields": {
+        "language": {
+            "type": "string"
+        },
+        "key": {
+            "type": "string"
+        },
+        "status": {
+            "type": "string"
+        },
+        "message": {
+            "type": "string"
+        }
+    },
+    "views": {
+        "overview": {
+            "title": "Validation Overview",
+            "transformation": {
+                "fields": [
+                    "language",
+                    "key",
+                    "status",
+                    "message"
+                ]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "language": {
+                        "label": "Language",
+                        "format": "text"
+                    },
+                    "key": {
+                        "label": "Key",
+                        "format": "text"
+                    },
+                    "status": {
+                        "label": "Status",
+                        "format": "text"
+                    },
+                    "message": {
+                        "label": "Message",
+                        "format": "text"
+                    }
+                }
+            }
+        }
+    }
+}

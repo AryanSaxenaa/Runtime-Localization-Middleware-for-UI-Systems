@@ -1,0 +1,70 @@
+{
+    "title": "Runtime UI Text Translator Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "lingoApiKey": {
+            "title": "Lingo.dev API Key",
+            "type": "string",
+            "description": "Your Lingo.dev API key. Required for authentication.",
+            "editor": "textfield",
+            "isSecret": true
+        },
+        "uiStrings": {
+            "title": "UI Strings",
+            "type": "object",
+            "description": "Key-value pairs of UI strings to be localized. Supports nested objects.",
+            "editor": "json",
+            "prefill": {
+                "login.title": "Welcome back",
+                "login.button": "Sign in"
+            }
+        },
+        "sourceLanguage": {
+            "title": "Source Language",
+            "type": "string",
+            "description": "The language code of the source strings (e.g., 'en').",
+            "editor": "textfield",
+            "default": "en"
+        },
+        "targetLanguages": {
+            "title": "Target Languages",
+            "type": "array",
+            "description": "List of language codes to translate into (e.g., 'fr', 'de').",
+            "editor": "stringList",
+            "prefill": [
+                "fr",
+                "de"
+            ]
+        },
+        "tone": {
+            "title": "Tone",
+            "type": "string",
+            "description": "Desired tone of the translation.",
+            "editor": "select",
+            "enum": [
+                "friendly",
+                "professional",
+                "neutral",
+                "formal",
+                "casual"
+            ],
+            "default": "neutral"
+        },
+        "placeholders": {
+            "title": "Placeholders",
+            "type": "array",
+            "description": "List of placeholder patterns to preserve (e.g., '{{username}}').",
+            "editor": "stringList",
+            "prefill": [
+                "{{username}}",
+                "{count}"
+            ]
+        }
+    },
+    "required": [
+        "uiStrings",
+        "targetLanguages",
+        "lingoApiKey"
+    ]
+}

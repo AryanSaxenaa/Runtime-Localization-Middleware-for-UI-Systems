@@ -1,0 +1,17 @@
+{
+    "actorOutputSchemaVersion": 1,
+    "title": "Runtime UI Text Translator Output",
+    "description": "Localized UI strings and translation status summary",
+    "properties": {
+        "localizedStrings": {
+            "type": "string",
+            "title": "Localized Strings (JSON)",
+            "template": "{{links.apiDefaultKeyValueStoreUrl}}/records/OUTPUT"
+        },
+        "translationStatus": {
+            "type": "string",
+            "title": "Translation Status",
+            "template": "{{links.apiDefaultDatasetUrl}}/items?view=overview"
+        }
+    }
+}

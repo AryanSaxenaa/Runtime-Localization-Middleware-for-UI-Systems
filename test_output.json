@@ -1,0 +1,32 @@
+{
+  "fr": {
+    "auth.login.title": "Bon retour",
+    "auth.login.button": "Se connecter",
+    "auth.login.error": "Email ou mot de passe invalide",
+    "profile.greeting": "Bonjour, {{username}}",
+    "checkout.confirm": "Êtes-vous sûr de vouloir continuer ?",
+    "notification.new_message": "Vous avez {count} nouveaux messages",
+    "settings.save": "Enregistrer les modifications",
+    "error.generic": "Une erreur s'est produite. Veuillez réessayer."
+  },
+  "de": {
+    "auth.login.title": "Willkommen zurück",
+    "auth.login.button": "Anmelden",
+    "auth.login.error": "Ungültige E-Mail-Adresse oder Passwort",
+    "profile.greeting": "Hallo, {{username}}",
+    "checkout.confirm": "Möchten Sie wirklich fortfahren?",
+    "notification.new_message": "Sie haben {count} neue Nachrichten",
+    "settings.save": "Änderungen speichern",
+    "error.generic": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut."
+  },
+  "es": {
+    "auth.login.title": "Bienvenido de nuevo",
+    "auth.login.button": "Iniciar sesión",
+    "auth.login.error": "Email o contraseña inválidos",
+    "profile.greeting": "Hola, {{username}}",
+    "checkout.confirm": "¿Estás seguro de que quieres continuar?",
+    "notification.new_message": "Tienes {count} mensajes nuevos",
+    "settings.save": "Guardar cambios",
+    "error.generic": "Algo salió mal. Por favor, inténtalo de nuevo."
+  }
+}
